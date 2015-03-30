@@ -1,0 +1,13 @@
+/*
+|
+| @AUTHOR Magdiel Duarte
+| @DATE 29/03/2015
+|
+| Default style for links
+|
+*/
+a { 
+	&:hover {	
+		text-decoration: underline; 
+		cursor: pointer; }
+} /* end a */

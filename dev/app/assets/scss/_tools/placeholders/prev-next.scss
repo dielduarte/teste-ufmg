@@ -1,0 +1,18 @@
+/*
+|
+| @AUTHOR Magdiel Duarte
+| @DATE 29/03/2015
+|
+| prev-next placeholder,
+|	is used for set prev and next links in correct position
+*/
+
+%prev-next {
+	position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;	
+	font-size: 60px;
+  letter-spacing: -20px; 
+	
+	&:hover { text-decoration: none; }
+}

@@ -1,2 +1,46 @@
 section
-	|Ready for develop!
+	img(src = "assets/img/logo-ufmg.png", alt = "Logo ufmg", class = "logo animated bounceInDown")
+	
+	.panel(class='animated fadeIn')
+		a(class='panel-link', ng-click='vm.seePosts = 1', ng-show = 'vm.seePosts == 0') See Posts >>
+		a(class='panel-link', ng-click='vm.seePosts = 0', ng-show = 'vm.seePosts == 1') See Infos >>
+		h1(class='panel-name', ng-bind ='vm.name') Leanne Graham
+		span(class='panel-username', ng-bind = 'vm.username') @bret
+
+		.panel-info(ng-show='vm.seePosts == 0', class='animated fadeIn')
+			.info
+				span.panel-subtitle
+					|Phone:
+				|{{ vm.phone }}
+
+			.info.left
+				span.panel-subtitle
+					|Mail:
+				|{{ vm.email }}
+
+			.info.left
+				span.panel-subtitle
+					|Site:
+				|{{ vm.site }}
+
+			.info.left
+				span.panel-subtitle
+					|Company:
+				|{{ vm.company }}
+
+			address.panel-address
+				span.panel-subtitle address:
+				|{{ vm.address }}
+				br
+				|{{ vm.city }}
+
+		a(class='prev', ng-click='vm.prev()', ng-show='vm.currentUserId > 1') <<
+		a(class='next', ng-click='vm.next()', ng-show='vm.showNext == 1') >>
+		
+		section(class='posts', ng-show='vm.seePosts == 1')
+			article(dir-paginate="post in vm.posts| itemsPerPage: 2" , class='animated animated-fast slideInRight')
+				header
+					h1.panel-subtitle {{ post.title }}
+				p  {{ post.body }}
+
+			dir-pagination-controls

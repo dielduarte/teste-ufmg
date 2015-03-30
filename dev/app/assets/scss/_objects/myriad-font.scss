@@ -1,0 +1,18 @@
+/*
+|
+| @AUTHOR Magdiel Duarte
+| @DATE 29/03/2015
+|
+| Include Myriadpro regular font
+|
+*/
+
+@font-face {
+  font-family: 'myriadpro-regular';
+  src: url('../fonts/MyriadWebPro.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/MyriadWebPro.woff') format('woff'), 
+    	url('../fonts/MyriadWebPro.ttf')  format('truetype'), 
+    	url('../fonts/MyriadWebPro.svg#MyriadWebPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

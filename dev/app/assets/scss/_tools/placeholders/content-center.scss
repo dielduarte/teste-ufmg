@@ -1,0 +1,17 @@
+/*
+|
+| @AUTHOR Magdiel Duarte
+| @DATE 29/03/2015
+|
+| content-center placeholder,
+| is used to center the element on the screen
+|
+*/
+
+%content-center { 
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	@include translate(-50%, -50%); }

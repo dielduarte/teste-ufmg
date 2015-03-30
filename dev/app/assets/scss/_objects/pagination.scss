@@ -1,0 +1,31 @@
+/*
+|
+| @AUTHOR Magdiel Duarte
+| @DATE 29/03/2015
+|
+| style for pagination object
+|
+*/
+
+.pagination	{ 
+	margin: 0; 
+	text-align: center;
+
+	li {	
+		margin-right: 5px; 
+		display: inline-block; 
+		margin-top: 0; }
+
+	li.active a { background-color: $white; }
+
+	a { 
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: $black;
+		border: 1px solid $black;
+		margin-right: 5px;
+
+		@include border-radius(50%); }	
+
+} /* end pagination */ 

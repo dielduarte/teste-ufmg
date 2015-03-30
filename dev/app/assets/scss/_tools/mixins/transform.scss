@@ -1,0 +1,23 @@
+/*
+|
+| @AUTHOR Magdiel Duarte
+| @DATE 29/03/2015
+|
+| transform mixin`s
+|
+*/
+
+@mixin transform($data) {
+	   -moz-transform: $data;
+	     -o-transform: $data;
+	    -ms-transform: $data;
+	-webkit-transform: $data;
+          transform: $data;
+}
+
+	/*
+	| translate  - submixin 
+	*/
+		@mixin translate ($x, $y) {
+		   @include transform(translate($x, $y));
+		}

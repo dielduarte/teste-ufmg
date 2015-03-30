@@ -1,0 +1,16 @@
+/*
+|
+| @AUTHOR Magdiel Duarte
+| @DATE 29/03/2015
+|
+| style for prev and next object
+|
+*/
+
+.prev,
+.next { @extend %prev-next; }
+
+.next {	right: -80px;	}
+
+.prev { left: -67px;	}
+

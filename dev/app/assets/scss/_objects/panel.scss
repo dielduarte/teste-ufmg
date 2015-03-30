@@ -1,0 +1,38 @@
+/*
+|
+| @AUTHOR Magdiel Duarte
+| @DATE 29/03/2015
+|
+| style for panel object
+|
+*/
+
+.panel {
+	@extend %content-center;
+
+	padding: 27px;
+	background-color: $white;
+	border: 1px solid $black;  
+	min-width: 800px;	
+	font-weight: 400;
+	font-size: 30px;	}
+
+	.panel-name { font-size: 50px; }
+
+	.panel-subtitle { 
+		font-size: 20px; 
+		display: block; 
+		color: $dark-gray;	}
+
+	.panel-link {	float: right; }
+	
+	.panel-info {
+		.info { 
+			width: 50%;
+			margin-top: 30px; }
+	} /* end panel-info */
+
+	.panel-address { 
+		clear: both;
+		padding-top: 108px;
+		text-align: center;	}

@@ -1,0 +1,21 @@
+/*
+|
+| @AUTHOR Magdiel Duarte
+| @DATE 29/03/2015
+|
+| style for load component
+|
+*/
+
+#load {
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: $gray;
+	
+  @include transition(all, 4s, linear); }
+	
+	.load-none { display: none; }
+ 	
+ 	.load-block { display: block; }
